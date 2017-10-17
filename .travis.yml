@@ -8,4 +8,4 @@ before_script:
 script:
   - autoreconf -iv && ./configure
   - make -C test lint
-  - make check
+  - make check  VERBOSE=1 V=1
